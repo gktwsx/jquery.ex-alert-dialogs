@@ -1,0 +1,122 @@
+/*
+ * 	exButton.css 0.1.0
+ *	written by Cyokodog	
+ *
+ *	Copyright (c) 2010 Cyokodog (http://d.hatena.ne.jp/cyokodog/)
+ *	Dual licensed under the MIT (MIT-LICENSE.txt)
+ *	and GPL (GPL-LICENSE.txt) licenses.
+ *
+ */
+ul.ex-buttons li,
+span.ex-button{
+	padding:0;
+	width:100px;
+	height:12px;
+	position:relative;
+	display:inline-block;
+	/display:inline;
+	/zoom:1;
+	border-style:solid;
+	border-width:1px 1px 8px;
+	border-color:#d0d0d0;
+	background:#e0e0e0;
+}
+ul.ex-buttons li{
+	margin:0 2px;
+}
+ul.ex-buttons li a,
+ul.ex-buttons li button,
+ul.ex-buttons li input,
+span.ex-button a,
+span.ex-button button,
+span.ex-button input{
+	margin:0;
+	padding:0;
+	font-size:13px;
+	line-height:1.1em;
+	text-align:center;
+	position:absolute;
+	top:0;
+	left:0;
+	text-decoration:none;
+	display:block;
+	border-style:solid;
+	border-width:1px;
+	border-color:#fff;
+	color:#505050;
+}
+ul.ex-buttons li a,
+span.ex-button a{
+	padding:2px 0 0;
+	width:98px;
+	height:15px;
+}
+
+ul.ex-buttons li a:active,
+ul.ex-buttons li button:active,
+ul.ex-buttons li input:active,
+span.ex-button a:active,
+span.ex-button button:active,
+span.ex-button input:active{
+	padding-left:3px;
+}
+
+ul.ex-buttons li button,
+ul.ex-buttons li input,
+span.ex-button button,
+span.ex-button input{
+	width:100%;
+	height:19px;
+	background-color:transparent;
+}
+ul.ex-buttons li a:hover,
+ul.ex-buttons li button:hover,
+ul.ex-buttons li input:hover,
+span.ex-button a:hover,
+span.ex-button button:hover,
+span.ex-button input:hover{
+/*	border-color:#00b0ff;*/
+}
+
+
+/* color black */
+ul.ex-buttons-black li,
+ul.ex-buttons li.ex-button-black,
+span.ex-button-black{
+	border-color:#303030 #404040 #303030 #404040;
+	background:#606060;
+}
+ul.ex-buttons-black li a,
+ul.ex-buttons-black li button,
+ul.ex-buttons-black li input,
+ul.ex-buttons li.ex-button-black a,
+ul.ex-buttons li.ex-button-black button,
+ul.ex-buttons li.ex-button-black input,
+span.ex-button-black a,
+span.ex-button-black button,
+span.ex-button-black input{
+	border-color:#a0a0a0;
+	color:#e0e0e0;
+}
+
+
+/* color red */
+ul.ex-buttons-red li,
+ul.ex-buttons li.ex-button-red,
+span.ex-button-red{
+	border-color:#a05050 #b06060 #a05050 #b06060;
+	background:#d08080;
+}
+ul.ex-buttons-red li a,
+ul.ex-buttons-red li button,
+ul.ex-buttons-red li input,
+ul.ex-buttons li.ex-button-red a,
+ul.ex-buttons li.ex-button-red button,
+ul.ex-buttons li.ex-button-red input,
+span.ex-button-red a,
+span.ex-button-red button,
+span.ex-button-red input{
+	border-color:#d0c0c0;
+	color:#fff;
+}
+

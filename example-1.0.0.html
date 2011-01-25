@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Confirm :: Demo</title>
+		<link rel="stylesheet" type="text/css" href="./demo.css"/>
+		<style>
+			dt{
+				margin:0 0 2px;
+				font-weight:bold;
+				color:#446688;
+			}
+			dd{
+				margin:0 0 1em;
+			}
+			input.name,
+			input.url,
+			textarea{
+				width:300px;
+			}
+			textarea{
+				height:5em;
+			}
+			input:focus.name,
+			input:focus.url,
+			textarea:focus{
+				border:solid 2px #446699;
+			}
+			.error{
+				background:#ffaacc;
+			}
+		</style>
+		<script type="text/javascript" src="./jquery-1.4.2.min.js"></script>
+		<script>
+			jQuery(function($){
+				$('input.send').click(function(){
+					return confirm('登録しますか？');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Form Confirm :: Demo</h1>
+		</div>
+		<div class="body">
+			<form method="post">
+				<dl>
+					<dt>Name</dt>
+					<dd><input name="name" class="name" value=""/></dd>
+					<dt>URL</dt>
+					<dd><input name="url" class="url" value=""/></dd>
+					<dt>Comment</dt>
+					<dd><textarea name="comment" class="comment"></textarea></dd>
+				</dl>
+				<input class="send" type="submit" name="send" value="登録"/>
+			</form>
+		</div>
+		<div class="footer">
+			<div class="wrapper">
+				<a class="article" href="http://d.hatena.ne.jp/cyokodog/">Cyokodog::Diary</a>
+			</div>
+		</div>
+	</body>
+</html>
