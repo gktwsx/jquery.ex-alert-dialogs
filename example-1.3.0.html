@@ -34,7 +34,7 @@
 		</style>
 		<script type="text/javascript" src="./jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="./alertdialogs/jquery.alerts.js"></script>
-		<script type="text/javascript" src="./jquery.exalertdialogs-0.1.0.js"></script>
+		<script type="text/javascript" src="./jquery.exalertdialogs-latest.js"></script>
 		<script>
 			jQuery(function($){
 
@@ -50,13 +50,17 @@
 					}
 					return true;
 				}
-				$('input.send').exJConfirm('登録しますか？','登録確認',function(){
-					$($('input.send').attr('form')).find('.error').removeClass('error')
-					return	$('input.name').requirdCheck('Name') &&
-							$('input.url').requirdCheck('URL') && 
-							$('textarea.comment').requirdCheck('Comment');
-				});
-
+				$('input.send').exJConfirm(
+					'登録しますか？',
+					'登録確認',{
+						preCallback : function(){
+							$($('input.send').attr('form')).find('.error').removeClass('error')
+							return	$('input.name').requirdCheck('Name') &&
+									$('input.url').requirdCheck('URL') && 
+									$('textarea.comment').requirdCheck('Comment');
+						}
+					}
+				);
 			});
 		</script>
 	</head>

@@ -2,7 +2,7 @@
 <html lang="ja">
 	<head>
 		<meta charset="UTF-8">
-		<title>Form Confirm :: Demo</title>
+		<title>jQuery exAutofocus :: Demo</title>
 		<link rel="stylesheet" type="text/css" href="./demo.css"/>
 		<link rel="stylesheet" type="text/css" href="./alertdialogs/jquery.alerts.css"/>
 		<style>
@@ -15,7 +15,6 @@
 				margin:0 0 1em;
 			}
 			input.name,
-			input.url,
 			textarea{
 				width:300px;
 			}
@@ -23,12 +22,8 @@
 				height:5em;
 			}
 			input:focus.name,
-			input:focus.url,
 			textarea:focus{
 				border:solid 2px #446699;
-			}
-			.error{
-				background:#ffaacc;
 			}
 		</style>
 		<script type="text/javascript" src="./jquery-1.4.2.min.js"></script>
@@ -57,11 +52,9 @@
 			<form method="post">
 				<dl>
 					<dt>Name</dt>
-					<dd><input name="name" class="name" value=""/></dd>
-					<dt>URL</dt>
-					<dd><input name="url" class="url" value=""/></dd>
+					<dd><input name="name" class="name" value="TARO_YAMADA"/></dd>
 					<dt>Comment</dt>
-					<dd><textarea name="comment" class="comment"></textarea></dd>
+					<dd><textarea name="comment"></textarea></dd>
 				</dl>
 				<input class="send" type="submit" name="send" value="登録"/>
 			</form>
